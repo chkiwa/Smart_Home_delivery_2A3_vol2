@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/resource">
+        <file>img/Fast_food_delivery_transparent.png</file>
+        <file>img/Fast_food_delivery3.png</file>
+    </qresource>
+</RCC>

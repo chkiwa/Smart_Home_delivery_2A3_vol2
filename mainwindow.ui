@@ -1,0 +1,3075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>678</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>678</width>
+      <height>314</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(47, 79, 79);</string>
+    </property>
+    <property name="currentIndex">
+     <number>5</number>
+    </property>
+    <widget class="QWidget" name="page">
+     <widget class="QLabel" name="label_pic">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_ID">
+      <property name="geometry">
+       <rect>
+        <x>282</x>
+        <y>80</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+   font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_mdp">
+      <property name="geometry">
+       <rect>
+        <x>282</x>
+        <y>130</y>
+        <width>221</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+	font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_seconnecter">
+      <property name="geometry">
+       <rect>
+        <x>293</x>
+        <y>180</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_seconnecter{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font: bold 14px;
+    min-width: 10em;
+    padding: 6px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Connecter</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_2">
+     <widget class="QLabel" name="label_pic_2">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>70</y>
+        <width>131</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;La Page d'Accueil&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_deconnecter">
+      <property name="geometry">
+       <rect>
+        <x>580</x>
+        <y>220</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_deconnecter{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_deconnecter:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_deconnecter:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Déconnecter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_music">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>210</y>
+        <width>75</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_music{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_music:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_music:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Musique</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_time">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>30</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; font-style:italic; text-decoration: underline; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_date">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>10</y>
+        <width>111</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; font-style:italic; text-decoration: underline; color:#ffffff;&quot;&gt;&lt;br/&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>70</y>
+        <width>158</width>
+        <height>176</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButton_partenaire">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_partenaire{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_partenaire:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_partenaire:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Partenaires</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_employes">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_employes{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_employes:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_employes:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Livreurs</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_commande">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_commande{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_commande:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_commande:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Commandes</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_client">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_client{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_client:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_client:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Clients</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_reclamation">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_reclamation{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_reclamation:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_reclamation:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Réclamations</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>70</y>
+        <width>158</width>
+        <height>176</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="pushButton_promotion">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_promotion{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_promotion:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_promotion:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Promotions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_mdt">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_mdt{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_mdt:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_mdt:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Véhicules</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_zones">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_zones{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_zones:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_zonespressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Zones</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_facture">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_facture{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_facture:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_facture:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Factures</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton_categorie">
+         <property name="styleSheet">
+          <string notr="true">QPushButton#pushButton_categorie{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_categorie:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_categorie:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+         </property>
+         <property name="text">
+          <string>Les Catégories</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_3">
+     <widget class="QLabel" name="label_gestion_livreur">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Gestion des Livreurs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>341</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListView {
+    alternate-background-color: yellow;
+   border: 1px solid #6a6ea9;
+   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_presence">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>190</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_presence{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_presence:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_presence:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>La présence des Livreurs</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ajouter1">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>140</y>
+        <width>136</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_ajouter1{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_ajouter1:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_ajouter1:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter un Livreur</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>100</y>
+        <width>120</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 170, 0);
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                               stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+      </property>
+      <property name="title">
+       <string>Chercher</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>20</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_recherche">
+          <property name="styleSheet">
+           <string notr="true">  border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_chercher">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_chercher{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_chercher:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_chercher:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+          </property>
+          <property name="text">
+           <string>chercher</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_acc">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>15</y>
+        <width>64</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_acc{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_acc:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_acc:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Accueil</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_4">
+     <widget class="QLabel" name="label_pic_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Ajouter un Livreur&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>79</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_prenom">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_id">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_mdp_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_numero_tele">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idscooter">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_presence">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_heure">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ajouter2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>100</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_ajouter2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_ajouter2:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_ajouter2:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>150</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_5">
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Modifier un Livreur&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_id_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_nom_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>79</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_numero_tele_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_presence_2">
+      <property name="geometry">
+       <rect>
+        <x>160</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_mdp_3">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>120</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_prenom_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>80</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_heure_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>200</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idscooter_2">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_enregistrer">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>100</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_enregistrer{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_enregistrer:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_enregistrer:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Enregistrer</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_2">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>150</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_2:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_2:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_6">
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Consulter un Livreur&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_6">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>91</y>
+        <width>431</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(173, 255, 47);
+alternate-background-color: rgb(220, 220, 220);
+show-decoration-selected: 1;
+
+QtabtleView::item:selected {
+    border: 1px solid #6a6ea9;
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>150</number>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_3{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_3:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_3:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_print">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>200</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_print{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_print:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_print:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Imprimer</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_temp">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>210</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_7">
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;La présence des Livreurs&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_7">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_2">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>431</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(173, 255, 47);
+alternate-background-color: rgb(220, 220, 220);
+show-decoration-selected: 1;
+
+QtabtleView::item:selected {
+    border: 1px solid #6a6ea9;
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>150</number>
+      </attribute>
+     </widget>
+     <widget class="QPushButton" name="pushButton_trier">
+      <property name="geometry">
+       <rect>
+        <x>465</x>
+        <y>235</y>
+        <width>86</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_trier{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 12px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_trier:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_trier:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Trier</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_4">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_4{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_4:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_4:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_stat">
+      <property name="geometry">
+       <rect>
+        <x>345</x>
+        <y>235</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_stat{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_stat:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_stat:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Les statistiques</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_8">
+     <widget class="QFrame" name="horizontalFrame">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>451</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout"/>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_5">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_5{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_5:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_5:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_9">
+     <widget class="QLabel" name="label_gestion_scooter">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Gestion des scooters&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ajouterscooter">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>130</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_ajouterscooter{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_ajouterscooter:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_ajouterscooter:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter un Scooter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_depense">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>180</y>
+        <width>151</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_depense{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+#pushButton_depense:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;
+}
+
+#pushButton_depense:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 10em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Les dépenses des Scooters</string>
+      </property>
+     </widget>
+     <widget class="QListView" name="listView_2">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>70</y>
+        <width>341</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QListView {
+    alternate-background-color: yellow;
+   border: 1px solid #6a6ea9;
+   background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #FAFBFE, stop: 1 #DCDEF1);
+}
+</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>100</y>
+        <width>120</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(85, 170, 0);
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                               stop: 0 #FAFBFE, stop: 1 #DCDEF1);</string>
+      </property>
+      <property name="title">
+       <string>Chercher</string>
+      </property>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>20</y>
+         <width>111</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QLineEdit" name="lineEdit_chercher">
+          <property name="styleSheet">
+           <string notr="true">  border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="pushButton_chercher_2">
+          <property name="styleSheet">
+           <string notr="true">QPushButton#pushButton_chercher_2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_chercher_2:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_cherche_2r:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+          </property>
+          <property name="text">
+           <string>chercher</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_acc_2">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>15</y>
+        <width>64</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_acc_2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_acc_2:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_acc_2:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Accueil</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_10">
+     <widget class="QLabel" name="label_pic_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_ajoutermdt2">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>100</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_ajoutermdt2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_ajoutermdt2:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_ajoutermdt:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Ajouter</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_6">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>150</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_6{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_6:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_6:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_depense">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>200</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dispo">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>160</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idscooter_3">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>80</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Ajouter un Scooter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_etat">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_11">
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Modifier un Scooter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_7">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>150</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_7{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_7:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_7:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_dispo_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>160</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_11">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_depense_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>200</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_idscooter_4">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>80</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_etat_2">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>120</y>
+        <width>141</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 0 8px;
+    background: white;
+    selection-background-color: darkgray;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_enregistrermdt">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>100</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_enregistrermdt{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_enregistrermdt:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_enregistrermdt:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Enregistrer</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_12">
+     <widget class="QPushButton" name="pushButton_precedent_8">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_8{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_8:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_8:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>271</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Consulter un scooter&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_12">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_3">
+      <property name="geometry">
+       <rect>
+        <x>155</x>
+        <y>91</y>
+        <width>431</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(173, 255, 47);
+alternate-background-color: rgb(220, 220, 220);
+show-decoration-selected: 1;
+
+QtabtleView::item:selected {
+    border: 1px solid #6a6ea9;
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>150</number>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_13">
+     <widget class="QPushButton" name="pushButton_precedent_9">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_9{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_9:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_9:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_11">
+      <property name="geometry">
+       <rect>
+        <x>210</x>
+        <y>20</y>
+        <width>311</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 italic 55pt &quot;Montserrat&quot;;</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#b8860b;&quot;&gt;Les dépenses des Scooters&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_pic_13">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_stat_2">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>235</y>
+        <width>91</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_stat_2{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_sta_2t:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_stat_2:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Les statistiques</string>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView_4">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>70</y>
+        <width>451</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: rgb(173, 255, 47);
+alternate-background-color: rgb(220, 220, 220);
+show-decoration-selected: 1;
+
+QtabtleView::item:selected {
+    border: 1px solid #6a6ea9;
+}
+</string>
+      </property>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>150</number>
+      </attribute>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_14">
+     <widget class="QLabel" name="label_pic_14">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>30</y>
+        <width>81</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QFrame" name="horizontalFrame_2">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>40</y>
+        <width>451</width>
+        <height>191</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_2"/>
+     </widget>
+     <widget class="QPushButton" name="pushButton_precedent_10">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>130</y>
+        <width>76</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_precedent_10{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+#pushButton_precedent_10:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;
+}
+
+#pushButton_precedent_10:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 5em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Précedent</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_15">
+     <widget class="QPushButton" name="pushButton_acc_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>15</y>
+        <width>64</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton#pushButton_acc_3{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+#pushButton_acc_3:hover {
+    background-color:rgb(222, 184, 135);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;
+}
+
+#pushButton_acc_3:pressed{
+background-color: grey;
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 8px;
+    border-color: beige;
+    font:  bold 10px;
+    color:yellow;
+    min-width: 4em;
+    padding: 6px;}</string>
+      </property>
+      <property name="text">
+       <string>Accueil</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>136</x>
+        <y>90</y>
+        <width>421</width>
+        <height>101</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>678</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
