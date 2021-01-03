@@ -30,7 +30,7 @@ MainWindow::MainWindow(QWidget *parent)
     animation->setEndValue(QRect(160,10,171,30));
     animation->start();
 
-    ui->listView->setModel(temp.afficherliste());
+    ui->listView->setModel(temp.afficherliste());//afficher employee
     ui->listView->setContextMenuPolicy(Qt::CustomContextMenu); //menu de bouton droite
     connect(ui->listView, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(showContextMenu(QPoint)));
 
@@ -47,7 +47,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->lineEdit_mdp_2->setPlaceholderText(" Enter le mot de passe");
     ui->lineEdit_heure->setPlaceholderText(" Enter les heures");
     ui->lineEdit_presence->setPlaceholderText(" Est_il présent?");
-    ui->lineEdit_idscooter->setPlaceholderText(" Entrer l'id du scooter");
+
 
     ui->lineEdit_nom->setValidator(new QRegExpValidator(QRegExp("[A-Za-z]+")));
     ui->lineEdit_prenom->setValidator(new QRegExpValidator(QRegExp("[A-Za-z]+")));
@@ -56,7 +56,7 @@ MainWindow::MainWindow(QWidget *parent)
     ui->lineEdit_mdp_2->setValidator(new QRegExpValidator(QRegExp("[A-Za-z0-9]+")));
     ui->lineEdit_heure->setValidator(new QRegExpValidator(QRegExp("[0-9]{8}")));
     ui->lineEdit_presence->setValidator(new QRegExpValidator(QRegExp("[A-Za-z]+")));
-    ui->lineEdit_idscooter->setValidator(new QRegExpValidator(QRegExp("[A-Za-z0-9]+")));
+
 
 
     int w5 = ui->label_pic_5->width();
@@ -155,8 +155,9 @@ MainWindow::MainWindow(QWidget *parent)
 
     QDate date=QDate::currentDate();
     QString datetime_text =date.toString();
-    QString format("<center><b><font color='%1'>%2</font></b></center>");
-    ui->label_date->setText(format.arg("white",datetime_text));
+   // QString format("<center><b><font color='%1'>%2</font></b></center>");
+    //ui->label_date->setText(format.arg("white",datetime_text));
+    ui->label_date->setText(datetime_text);
 //arduino
     int ret = A.connect_arduino();
          switch(ret){
@@ -236,6 +237,7 @@ void MainWindow::on_pushButton_deconnecter_clicked()
 
 void MainWindow::on_pushButton_ajouter1_clicked()
 {
+    ui->comboBox_idscooter->setModel(temp.fillscooterIDInLivreur());
     ui->stackedWidget->setCurrentIndex(3);
 }
 void MainWindow::on_pushButton_acc_clicked()
@@ -253,6 +255,7 @@ void MainWindow::showContextMenu(const QPoint &pos)
         myMenu.addAction("consulter", this, SLOT(consulterItem()));
         myMenu.addAction("modifier",  this, SLOT(modifierItem()));
         myMenu.addAction("supprimer", this, SLOT(supprimerItem()));
+
 
         // Show context menu at handling position
         myMenu.exec(globalPos);
@@ -275,6 +278,7 @@ void MainWindow::supprimerItem()
        }
            }
 }
+
 
 
 void MainWindow::modifierItem()
@@ -314,7 +318,7 @@ void MainWindow::on_pushButton_ajouter2_clicked()
     QString id=ui->lineEdit_id->text();
     QString mdp=ui->lineEdit_mdp_2->text();
     QString presence=ui->lineEdit_presence->text();
-    QString idsco=ui->lineEdit_idscooter->text();
+    QString idsco=ui->comboBox_idscooter->currentText();
     int heure_m =ui->lineEdit_heure->text().toInt();
 
  livreur emp(nom,prenom,id,num_tele,mdp,presence,idsco,heure_m);
@@ -371,14 +375,6 @@ void MainWindow::on_pushButton_ajouter2_clicked()
         ui->lineEdit_mdp_2->setStyleSheet("border: 1px solid blue");
         }
 
-        if(ui->lineEdit_idscooter->text().isEmpty())
-        {ui->lineEdit_idscooter->setStyleSheet("border: 1px solid red");
-        test =true;
-        }
-        else {
-        ui->lineEdit_idscooter->setStyleSheet("border: 1px solid blue");
-        }
-
         if(ui->lineEdit_presence->text().isEmpty())
         {ui->lineEdit_presence->setStyleSheet("border: 1px solid red");
         test =true;
@@ -397,7 +393,7 @@ void MainWindow::on_pushButton_ajouter2_clicked()
 
 
         test=false;
-        if((ui->lineEdit_id->text().isEmpty())||(ui->lineEdit_prenom->text().isEmpty())||(ui->lineEdit_nom->text().isEmpty())||(ui->lineEdit_numero_tele->text().isEmpty())||(ui->lineEdit_mdp_2->text().isEmpty())||(ui->lineEdit_idscooter->text().isEmpty())||(ui->lineEdit_presence->text().isEmpty())||(ui->lineEdit_heure->text().isEmpty()))
+        if((ui->lineEdit_id->text().isEmpty())||(ui->lineEdit_prenom->text().isEmpty())||(ui->lineEdit_nom->text().isEmpty())||(ui->lineEdit_numero_tele->text().isEmpty())||(ui->lineEdit_mdp_2->text().isEmpty())||(ui->lineEdit_presence->text().isEmpty())||(ui->lineEdit_heure->text().isEmpty()))
                 {
             test=true;
             QMessageBox::warning(this,"we deliver","Veuillez remplir les champs obligatoires marqués en rouge");
@@ -505,24 +501,44 @@ void MainWindow::on_pushButton_print_clicked()
         QModelIndex index1 = model->index(0,1);
         QModelIndex index2 = model->index(0,2);
         QModelIndex index3 = model->index(0,3);
-        QModelIndex index4 = model->index(0,4);
-        QModelIndex index5 = model->index(0,5);
+
+
+        QModelIndex index6 = model->index(0,6);
         QModelIndex index7 = model->index(0,7);
 
         QPlainTextEdit text;
+
+            QTextDocument *doc = text.document();
+            QFont font = doc->defaultFont();
+
+            font.setBold(true);
+            font.setFamily("Arial");
+            font.setPixelSize(20);
+            doc->setDefaultFont(font);
+            text.appendPlainText("                            Fiche de paie                         We Deliver");
+            text.appendPlainText("");
+            text.appendPlainText("");
+            font.setPixelSize(14);
+            text.appendPlainText("                                                                  Date:"+ui->label_date->text()+"");
+            text.appendPlainText("");
+            text.appendPlainText("");
             text.appendPlainText("ID: "+index0.data().toString()+"");
             text.appendPlainText("Nom: "+index1.data().toString()+"");
             text.appendPlainText("Prénom: "+index2.data().toString()+"");
             text.appendPlainText("Numéro de téléphone: "+index3.data().toString()+"");
-            text.appendPlainText("Phone Number: "+index4.data().toString()+"");
-            text.appendPlainText("id de scooter: "+index5.data().toString()+"");
-            text.appendPlainText("nombre des heures: "+index7.data().toString()+"");
+            text.appendPlainText("id de scooter: "+index7.data().toString()+"");
+
+            text.appendPlainText("nombre des heures: "+index6.data().toString()+"");
             text.appendPlainText("salaire par heures: 5dt");
+
+            text.appendPlainText("");
+            text.appendPlainText("");
+            text.appendPlainText("");
+            text.appendPlainText("                                                signature de directeur");
 
             QPrinter printer;
                 printer.setPrinterName("Print");
-                //printer.setOutputFormat(QPrinter::PdfFormat);
-                //printer.setOutputFileName("Information Of Employee "+ui->viewID->text()+"");
+
                 QPrintDialog dlg(&printer,this);
                 if (dlg.exec() == QDialog::Rejected)
                 {
@@ -586,7 +602,7 @@ void MainWindow::on_pushButton_chercher_clicked()
        if(temp.recherche(id))
        {
            ui->tableView->setModel(temp.afficher(id));
-           ui->stackedWidget->setCurrentIndex(3);
+           ui->stackedWidget->setCurrentIndex(5);
        }
        else
        {
@@ -630,6 +646,8 @@ void MainWindow::showContextMenu1(const QPoint &pos)
         myMenu.addAction("consulter", this, SLOT(consulterItem1()));
         myMenu.addAction("modifier",  this, SLOT(modifierItem1()));
         myMenu.addAction("supprimer", this, SLOT(supprimerItem1()));
+
+
 
         // Show context menu at handling position
         myMenu.exec(globalPos);
@@ -770,7 +788,7 @@ void MainWindow::on_pushButton_enregistrermdt_clicked()
     {
         QMessageBox::information(this,"Modifier un scooter","scooter modifié.\n"
                                  "Click cancel to exit.",QMessageBox::Cancel);
-        ui->listView->setModel(sc.afficherliste());
+        ui->listView_2->setModel(sc.afficherliste());
         }
         else
             QMessageBox::warning(this,"Modifier un scooter","scooter non modifié.\n"
@@ -801,7 +819,7 @@ void MainWindow::on_pushButton_enregistrermdt_clicked()
             ui->lineEdit_etat_2->setStyleSheet("border: 1px solid blue");
             }
        test=false;
-       if((ui->lineEdit_etat_2->text().isEmpty())||(ui->lineEdit_dispo_2->text().isEmpty())||(ui->lineEdit_idscooter_2->text().isEmpty()))
+       if((ui->lineEdit_etat_2->text().isEmpty())||(ui->lineEdit_dispo_2->text().isEmpty())||(ui->lineEdit_idscooter_4->text().isEmpty()))
                {
            test=true;
            QMessageBox::warning(this,"we deliver","Veuillez remplir les champs obligatoires marqués en rouge");
@@ -851,10 +869,11 @@ void MainWindow::on_pushButton_stat_2_clicked()
 void MainWindow::on_pushButton_chercher_2_clicked()
 {
     QString id=ui->lineEdit_chercher->text();
+
        if(sco.recherche(id))
        {
-           ui->tableView->setModel(sco.afficher(id));
-           ui->stackedWidget->setCurrentIndex(3);
+           ui->tableView_3->setModel(sco.afficher(id));
+           ui->stackedWidget->setCurrentIndex(11);
        }
        else
        {
@@ -891,11 +910,11 @@ void MainWindow::on_pushButton_precedent_9_clicked()
 void MainWindow::update_label()
 {
     data=A.read_from_arduino();
-
-    ui->label_temp->setText(data);
+   QString tempe= QString::fromStdString(data.toStdString());
+    ui->label_temp->setText(tempe);
            A.write_to_arduino("1");
 
-     qDebug() << "data" << data;
+     qDebug()<< tempe;
 }
 
 

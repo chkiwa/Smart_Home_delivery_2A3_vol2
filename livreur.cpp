@@ -133,3 +133,14 @@ QSqlQueryModel* livreur::recherche(QString id)
      model->setQuery(query);
      return model;
  }
+
+QSqlQueryModel * livreur::fillscooterIDInLivreur()
+{
+  QSqlQueryModel * model=new QSqlQueryModel();
+  QSqlQuery qry ;
+  qry.prepare(" SELECT ID FROM scooter2");
+  qry.exec();
+
+  model->setQuery(qry);
+    return model;
+}

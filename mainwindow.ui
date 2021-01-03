@@ -27,7 +27,7 @@
      <string notr="true">background-color: rgb(47, 79, 79);</string>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page">
      <widget class="QLabel" name="label_pic">
@@ -1112,25 +1112,6 @@ background-color: grey;
 }</string>
       </property>
      </widget>
-     <widget class="QLineEdit" name="lineEdit_idscooter">
-      <property name="geometry">
-       <rect>
-        <x>350</x>
-        <y>160</y>
-        <width>131</width>
-        <height>31</height>
-       </rect>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QLineEdit {
-    border: 2px solid gray;
-    border-radius: 10px;
-    padding: 0 8px;
-    background: white;
-    selection-background-color: darkgray;
-}</string>
-      </property>
-     </widget>
      <widget class="QLineEdit" name="lineEdit_presence">
       <property name="geometry">
        <rect>
@@ -1263,6 +1244,19 @@ background-color: grey;
       </property>
       <property name="text">
        <string>Précedent</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_idscooter">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>160</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);</string>
       </property>
      </widget>
     </widget>

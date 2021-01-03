@@ -40,6 +40,7 @@ public:
     bool supprimer(QString);
     QSqlQuery recuperer(QString);
     QSqlQuery stat();
+    QSqlQueryModel* fillscooterIDInLivreur();
 };
 
 #endif // LIVREUR_H
