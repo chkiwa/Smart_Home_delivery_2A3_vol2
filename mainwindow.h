@@ -48,6 +48,8 @@ private slots:
     void modifierItem();
     void consulterItem();
 
+
+
     void on_pushButton_acc_clicked();
     void on_pushButton_ajouter1_clicked();
 
@@ -80,6 +82,7 @@ private slots:
     void supprimerItem1();
     void modifierItem1();
     void consulterItem1();
+
 
     void on_pushButton_ajouterscooter_clicked();
 
@@ -118,6 +121,7 @@ private slots:
     void on_pushButton_acc_3_clicked();
 
     void on_pushButton_music_clicked();
+
 
 private:
     Ui::MainWindow *ui;

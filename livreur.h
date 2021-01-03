@@ -12,6 +12,7 @@ public:
     livreur();
     livreur(QString ,QString,QString,long,QString,QString,QString,int);
 
+
     QString get_nom(){return nom;}
     QString get_prenom(){return prenom;}
     QString get_id(){return id;}
@@ -40,6 +41,7 @@ public:
     bool supprimer(QString);
     QSqlQuery recuperer(QString);
     QSqlQuery stat();
+    QSqlQueryModel* fillscooterIDInLivreur();
 };
 
 #endif // LIVREUR_H
